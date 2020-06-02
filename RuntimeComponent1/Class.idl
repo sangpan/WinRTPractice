@@ -1,0 +1,10 @@
+namespace RuntimeComponent1
+{
+    [default_interface]
+    runtimeclass Class
+    {
+        Class();
+        Int32 MyProperty;
+        void showP1();
+    }
+}

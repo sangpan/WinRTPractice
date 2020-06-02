@@ -1,0 +1,8 @@
+namespace RuntimeComponent1
+{
+    [default_interface]
+    runtimeclass P1 : Windows.UI.Xaml.Controls.Page
+    {
+        P1();
+    }
+}
