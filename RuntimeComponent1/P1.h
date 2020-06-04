@@ -8,7 +8,7 @@ namespace winrt::RuntimeComponent1::implementation
 {
     struct P1 : P1T<P1>
     {
-        P1() = default;
+        P1();
 
         void btn1_Click(winrt::Windows::Foundation::IInspectable const& sender, winrt::Windows::UI::Xaml::RoutedEventArgs const& e);
     };

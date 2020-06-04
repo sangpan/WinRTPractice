@@ -5,9 +5,13 @@
     xmlns:local="using:WinRTPractice"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    x:Name="AppMainPage"
     mc:Ignorable="d">
-
-    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-        <Button x:Name="myButton" Click="ClickHandler">Click Me</Button>
-    </StackPanel>
+    <RelativePanel>
+        <Frame x:Name="MainFrame" RelativePanel.Above="stackPan" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignLeftWithPanel="True"/>
+        <StackPanel x:Name="stackPan"  Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignLeftWithPanel="True">
+            <Button x:Name="myButton" Click="ClickHandler">Call windows runtime component</Button>
+            <Button x:Name="myButton3" Click="myButton3_Click_1">Second Page In App</Button>
+        </StackPanel>
+    </RelativePanel>
 </Page>

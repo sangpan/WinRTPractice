@@ -22,6 +22,7 @@
   <ItemGroup>
     <Midl Include="Class.idl" />
     <Midl Include="P1.idl" />
+    <Midl Include="ViewLifetimeControl.idl" />
   </ItemGroup>
   <ItemGroup>
     <None Include="RuntimeComponent1.def" />
@@ -34,6 +35,8 @@
     <Text Include="readme.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="P1.xaml" />
+    <Page Include="P1.xaml">
+      <Filter>Resources</Filter>
+    </Page>
   </ItemGroup>
 </Project>

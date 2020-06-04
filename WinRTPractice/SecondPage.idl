@@ -1,0 +1,9 @@
+namespace WinRTPractice
+{
+    [bindable]
+    [default_interface]
+    runtimeclass SecondPage : Windows.UI.Xaml.Controls.Page
+    {
+        SecondPage();
+    }
+}
