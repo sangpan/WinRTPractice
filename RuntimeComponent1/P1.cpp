@@ -15,7 +15,10 @@ namespace winrt::RuntimeComponent1::implementation
     {
         InitializeComponent();
     }
+	void P1::OnNavigatedTo(Windows::UI::Xaml::Navigation::NavigationEventArgs const& e) {
+		auto argument = unbox_value_or<hstring>(e.Parameter(), hstring());
 
+	}
 }
 
 
